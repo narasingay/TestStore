@@ -69,6 +69,19 @@ public class LoginPagePageObjects {
 	@FindBy(xpath="//div[@class='menu_text']")
 	public WebElement lnkMenuName;
 	
+	@FindBy(xpath="(//i[@class='fa fa-lock fa-fw'])[1]")
+	public WebElement lnkLogout;
+	
+	@FindBy(xpath="//input[@id='loginFrm_loginname']")
+	public WebElement txtUserName;
+	
+	@FindBy(xpath="//input[@id='loginFrm_password']")
+	public WebElement txtUserPassword;
+	
+	@FindBy(xpath="//button[@title='Login']")
+	public WebElement btnLogin;
+	
+	
 	
 	public void clickOnLoginRegister() {
 		lnkLoginRegister.click();
@@ -134,13 +147,13 @@ public class LoginPagePageObjects {
 		clickOnContinue();
 		enterName("Narsing");
 		enterSurname("Rao");
-		enterEmail("automation124@gmail.com");
-		enterAddressOne("Shalimar Bagh");
+		enterEmail("automation215@gmail.com");
+		enterAddressOne("Singapore");
 		selectCounty("Singapore");
 		selectState("Singapore");
 		enterCity("Singapore");
 		enterZipCode("541203");
-		enterLoginName("Narasingarao");
+		enterLoginName("automation215");
 		enterLoginPassword("XXXXXXXXX");
 		enterConfirmPassword("XXXXXXXXX");		
 		clickOnAgreeCheckbox();
@@ -148,6 +161,22 @@ public class LoginPagePageObjects {
 	
 	public void clickOnMenuName() {
 		lnkMenuName.click();
+	}
+	
+	public void clickOnLogout() {
+		lnkLogout.click();
+	}
+	
+	public void enterUserName(String userName) {
+		txtUserName.sendKeys(userName);
+	}
+	
+	public void enterUserPassword(String userPassword) {
+		txtUserPassword.sendKeys(userPassword);
+	}
+	
+	public void clickOnLogin() {
+		btnLogin.click();
 	}
 	
 	
