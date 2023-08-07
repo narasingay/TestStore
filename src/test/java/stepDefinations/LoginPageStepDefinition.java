@@ -34,10 +34,10 @@ public class LoginPageStepDefinition {
 	}
 
 	@And("User enter name {string} surname {string} email {string} loginname {string} and other details in register page")
-	public void user_enter_name_surname_email_loginname_and_other_details_in_register_page(String expName, String expSurname, String eMail, String loginName)
-			throws Exception {
+	public void user_enter_name_surname_email_loginname_and_other_details_in_register_page(String expName,
+			String expSurname, String eMail, String loginName) throws Exception {
 		loginPagePageObjects = new LoginPagePageObjects(driver);
-		loginPagePageObjects.fillCreateAccountDetails(eMail,loginName);
+		loginPagePageObjects.fillCreateAccountDetails(eMail, loginName);
 	}
 
 	@When("Click on Continue button")
@@ -87,36 +87,13 @@ public class LoginPageStepDefinition {
 		WebElement element = driver.findElement(By.xpath("(//a[contains(text(),'Men')])[3]"));
 		action.moveToElement(element).build().perform();
 		Thread.sleep(1000);
-		
 		loginPagePageObjects.clickOnMainProd();
-
-		/*
-		 * WebElement eleProd =
-		 * driver.findElement(By.xpath("//a[contains(text(),'Pre-Shave & Shaving')]"));
-		 * eleProd.click(); Thread.sleep(1000);
-		 */
-		
 		Thread.sleep(1000);
 		loginPagePageObjects.clickOnAddToCart();
-		/*
-		 * WebElement eleAddToCart =
-		 * driver.findElement(By.xpath("(//a[@title='Add to Cart'])[1]"));
-		 * eleAddToCart.click(); Thread.sleep(1000);
-		 */
 		Thread.sleep(1000);
 		loginPagePageObjects.clickOnMenuAddToCart();
-		/*
-		 * WebElement menuAddToCart =
-		 * driver.findElement(By.xpath("(//li[@data-id='menu_cart'])[1]"));
-		 * menuAddToCart.click(); Thread.sleep(1000);
-		 */
 		Thread.sleep(1000);
 		loginPagePageObjects.clickOnCheckOut();
-		/*
-		 * WebElement lnkCheckOut =
-		 * driver.findElement(By.xpath("//a[@id='cart_checkout1']"));
-		 * lnkCheckOut.click(); Thread.sleep(1000);
-		 */
 	}
 
 	@Then("Validate product {string} details on payments page")

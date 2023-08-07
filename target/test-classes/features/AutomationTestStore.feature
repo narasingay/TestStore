@@ -1,5 +1,5 @@
 @TestStore
-Feature: Verify the functionality add to cart and payments for test store application
+Feature: Verify the test store automation
 
   @Validatenameandsurname
   Scenario Outline: Validate the name and surname after registering with required details
@@ -13,7 +13,7 @@ Feature: Verify the functionality add to cart and payments for test store applic
 
     Examples: 
       | Name    | Surname | Email                   | Loginname     |
-      | Narsing | rao     | automation333@gmail.com | automation312 |
+      | Narsing | rao     | automation555@gmail.com | automation444 |
 
   @Validateproducttdetails
   Scenario Outline: Validate the product details after checkout on payments page
@@ -27,4 +27,4 @@ Feature: Verify the functionality add to cart and payments for test store applic
 
     Examples: 
       | Username      | Userpassword | Productname   |
-      | automation312 | XXXXXXXXX    | Shaving cream |
+      | automation444 | XXXXXXXXX    | Shaving cream |

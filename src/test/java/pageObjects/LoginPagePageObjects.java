@@ -80,22 +80,21 @@ public class LoginPagePageObjects {
 
 	@FindBy(xpath = "//button[@title='Login']")
 	public WebElement btnLogin;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Pre-Shave & Shaving')]")
 	public WebElement lnkProd;
-	
+
 	@FindBy(xpath = "(//a[@title='Add to Cart'])[1]")
 	public WebElement lnkAddToCart;
-	
+
 	@FindBy(xpath = "(//li[@data-id='menu_cart'])[1]")
 	public WebElement lnkMenuAddToCart;
-	
+
 	@FindBy(xpath = "//button[@title='Confirm Order']")
 	public WebElement btnConfirmOrder;
-	
+
 	@FindBy(xpath = "//a[@id='cart_checkout1']")
-	public WebElement lnkCheckOut;	
-	
+	public WebElement lnkCheckOut;
 
 	public void clickOnLoginRegister() {
 		lnkLoginRegister.click();
@@ -192,19 +191,19 @@ public class LoginPagePageObjects {
 	public void clickOnLogin() {
 		btnLogin.click();
 	}
-	
+
 	public void clickOnMainProd() {
 		lnkProd.click();
 	}
-	
+
 	public void clickOnAddToCart() {
 		lnkAddToCart.click();
 	}
-	
+
 	public void clickOnMenuAddToCart() {
 		lnkMenuAddToCart.click();
 	}
-	
+
 	public void clickOnCheckOut() {
 		lnkCheckOut.click();
 	}
