@@ -13,7 +13,7 @@ Feature: Verify the test store automation
 
     Examples: 
       | BrowserName | Name    | Surname | Email                   | Loginname     |
-      | Chrome      | Narsing | rao     | automation888@gmail.com | automation777 |
+      | Chrome      | Narsing | rao     | automation999@gmail.com | automation888 |
 
   @Validateproducttdetails
   Scenario Outline: Validate the product details after checkout on payments page
@@ -27,4 +27,4 @@ Feature: Verify the test store automation
 
     Examples: 
       | BrowserName | Username      | Userpassword | Productname   |
-      | Chrome      | automation777 | XXXXXXXXX    | Shaving cream |
+      | Chrome      | automation888 | XXXXXXXXX    | Shaving cream |
