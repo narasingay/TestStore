@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.248">
-<testcase classname="Verify the functionality add to cart and payments for test store application" name="Validate the product details after checkout on payments page" time="25.97">
-<system-out><![CDATA[Given Lunch the browser and navigate to automation test store application...passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.842">
+<testcase classname="Verify the test store automation" name="Validate the name and surname after registering with required details" time="25.535">
+<system-out><![CDATA[Given Launch the browser "Chrome" and navigate to automation test store application.passed
 And Click on login or register button.......................................passed
-And user enters username "automation312" and userpassword "XXXXXXXXX" on login account screen.passed
-And Click on login button...................................................passed
-When User add product to the cart and click on checkout.....................passed
-Then Validate product "Shaving cream" details on payments page..............passed
+When Click on Continue button...............................................passed
+And User enter name "Narsing" surname "rao" email "automation888@gmail.com" loginname "automation777" and other details in register page.passed
+When Click on Continue button...............................................passed
+Then Validate the name "Narsing" and surname "rao" on landing screen........passed
 And User logout the test store application..................................passed
 ]]></system-out>
 </testcase>

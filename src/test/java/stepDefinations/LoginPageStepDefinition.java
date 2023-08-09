@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import io.cucumber.java.en.And;
@@ -19,12 +20,20 @@ public class LoginPageStepDefinition {
 	public WebDriver driver;
 	LoginPagePageObjects loginPagePageObjects;
 
-	@Given("Lunch the browser and navigate to automation test store application")
-	public void navigateUrl() {
-		System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://automationteststore.com/");
-		driver.manage().window().maximize();
+	@Given("Launch the browser {string} and navigate to automation test store application")
+	public void navigateUrl(String browserType) {
+		if (browserType.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.get("https://automationteststore.com/");
+			driver.manage().window().maximize();
+		} else {
+			System.setProperty("webdriver.edge.driver", "driver\\msedgedriver.exe");
+			driver = new EdgeDriver();
+			driver.get("https://automationteststore.com/");
+			driver.manage().window().maximize();
+		}
+
 	}
 
 	@And("Click on login or register button")
