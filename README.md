@@ -13,6 +13,11 @@ Cucumber
 Team members:
 Narasinga Rao
 
+Test Data:
+Need to change for below two fields only before running every time. Rest no need to change but can accoring to you.
+Email: automation3333@gmail.com
+Loginname: automation3333
+
 How to run scripts:
 We can run test scripts using tag name like scenario or feature level
 Scenario level

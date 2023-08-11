@@ -8,7 +8,7 @@ Feature: Verify the name and product details in automation test store applicatio
     When Click on Continue button
     And User enters personal and other details as requiired in register page to signup
       | Name    | Surname | Email                    | Addressone | Country   | State     | City      | Zipcode | Loginname      |
-      | Narsing | Rao     | automation2222@gmail.com | Singapore  | Singapore | Singapore | Singapore |  541203 | automation2222 |
+      | Narsing | Rao     | automation3333@gmail.com | Singapore  | Singapore | Singapore | Singapore |  541203 | automation3333 |
     When Click on Continue button
     Then Validate the name and surname on landing screen
       | Name    | Surname |
