@@ -3,126 +3,98 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-08-09T03:02:45.674Z",
-        "line": 16,
-        "name": "Validate the name and surname after registering with required details",
+        "start_timestamp": "2023-08-11T04:02:02.460Z",
+        "line": 30,
+        "name": "Validate the product details after checkout on payments page",
         "description": "",
-        "id": "verify-the-test-store-automation;validate-the-name-and-surname-after-registering-with-required-details;;2",
+        "id": "verify-the-name-and-product-details-in-automation-test-store-application;validate-the-product-details-after-checkout-on-payments-page;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8457000000,
+              "duration": 8972000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Launch the browser \"Chrome\" and navigate to automation test store application",
+            "line": 20,
+            "name": "Launch the browser and navigate to automation test store application",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Chrome\"",
-                  "offset": 19
-                }
-              ],
-              "location": "stepDefinations.LoginPageStepDefinition.navigateUrl(java.lang.String)"
+              "location": "stepDefinations.LoginPageStepDefinition.navigateToUrl()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 818000000,
+              "duration": 726000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 21,
             "name": "Click on login or register button",
             "match": {
-              "location": "stepDefinations.LoginPageStepDefinition.click_on_register_button()"
+              "location": "stepDefinations.LoginPageStepDefinition.click_on_login_or_register_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 879000000,
+              "duration": 269000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Click on Continue button",
+            "line": 22,
+            "name": "user enters username and userpassword on login account screen",
             "match": {
-              "location": "stepDefinations.LoginPageStepDefinition.click_on_continue_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4474000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User enter name \"Narsing\" surname \"rao\" email \"automation888@gmail.com\" loginname \"automation777\" and other details in register page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Narsing\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"rao\"",
-                  "offset": 34
-                },
-                {
-                  "val": "\"automation888@gmail.com\"",
-                  "offset": 46
-                },
-                {
-                  "val": "\"automation777\"",
-                  "offset": 82
-                }
-              ],
-              "location": "stepDefinations.LoginPageStepDefinition.user_enter_name_surname_email_loginname_and_other_details_in_register_page(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepDefinations.LoginPageStepDefinition.user_enters_username_and_userpassword_on_login_account_screen()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1449000000,
+              "duration": 991000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Click on Continue button",
+            "line": 23,
+            "name": "Click on login button",
             "match": {
-              "location": "stepDefinations.LoginPageStepDefinition.click_on_continue_button()"
+              "location": "stepDefinations.LoginPageStepDefinition.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9533000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User add product to the cart and click on checkout",
+            "match": {
+              "location": "stepDefinations.LoginPageStepDefinition.User_add_product_to_the_cart_and_click_on_checkout()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 51000000,
+              "duration": 2054000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "Validate the name \"Narsing\" and surname \"rao\" on landing screen",
+            "line": 25,
+            "name": "Validate product \"Shaving cream\" details on payments page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Narsing\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"rao\"",
-                  "offset": 40
+                  "val": "\"Shaving cream\"",
+                  "offset": 17
                 }
               ],
-              "location": "stepDefinations.LoginPageStepDefinition.Validate_the_name_and_surname_on_landing_screen(java.lang.String,java.lang.String)"
+              "location": "stepDefinations.LoginPageStepDefinition.Validate_product_details_on_payments_page(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 9231000000,
+              "duration": 4351000000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 26,
             "name": "User logout the test store application",
             "match": {
               "location": "stepDefinations.LoginPageStepDefinition.User_logout_the_test_store_application()"
@@ -135,14 +107,14 @@
             "name": "@TestStore"
           },
           {
-            "name": "@Validatenameandsurname"
+            "name": "@Validateproducttdetails"
           }
         ]
       }
     ],
-    "name": "Verify the test store automation",
+    "name": "Verify the name and product details in automation test store application",
     "description": "",
-    "id": "verify-the-test-store-automation",
+    "id": "verify-the-name-and-product-details-in-automation-test-store-application",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/AutomationTestStore.feature",
     "tags": [

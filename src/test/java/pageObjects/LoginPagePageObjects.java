@@ -9,6 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+/*
+ * This class defines page objects for user signup and login pages
+ */
 public class LoginPagePageObjects {
 
 	public WebDriver driver;
@@ -153,22 +156,6 @@ public class LoginPagePageObjects {
 
 	public void clickOnAgreeCheckbox() {
 		chkAgree.click();
-	}
-
-	public void fillCreateAccountDetails(String eMail, String loginName) throws Exception {
-		clickOnContinue();
-		enterName("Narsing");
-		enterSurname("Rao");
-		enterEmail(eMail);
-		enterAddressOne("Singapore");
-		selectCounty("Singapore");
-		selectState("Singapore");
-		enterCity("Singapore");
-		enterZipCode("541203");
-		enterLoginName(loginName);
-		enterLoginPassword("XXXXXXXXX");
-		enterConfirmPassword("XXXXXXXXX");
-		clickOnAgreeCheckbox();
 	}
 
 	public void clickOnMenuName() {

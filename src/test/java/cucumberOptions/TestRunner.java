@@ -1,13 +1,12 @@
 package cucumberOptions;
 
 import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/java/features", glue = "stepDefinations", tags = "@Validatenameandsurname", dryRun = false, monochrome = true, strict = true, plugin = {
-		"pretty", "html:target/cucumber-Report.html", "json:target/Report2.json", "junit:target/Report3.xml" })
+@CucumberOptions(features = "src/test/java/features", glue = "stepDefinations", tags = "@Validateproducttdetails", dryRun = false, monochrome = true, strict = true, plugin = {
+		"pretty", "html:target/cucumber-report.html", "json:target/report2.json", "junit:target/report3.xml" })
 
 public class TestRunner {
 
