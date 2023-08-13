@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.373">
-<testcase classname="Verify the name and product details in automation test store application" name="Validate the product details after checkout on payments page" time="27.038">
-<system-out><![CDATA[Given Launch the browser and navigate to automation test store application..passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.433">
+    <testcase classname="Verify the name and product details in automation test store application" name="Validate the product details after checkout on payments page" time="26.085">
+        <system-out><![CDATA[Given Launch the browser and navigate to automation test store application..passed
 And Click on login or register button.......................................passed
 And user enters username and userpassword on login account screen...........passed
 And Click on login button...................................................passed
@@ -9,5 +9,5 @@ When User add product to the cart and click on checkout.....................pass
 Then Validate product "Shaving cream" details on payments page..............passed
 And User logout the test store application..................................passed
 ]]></system-out>
-</testcase>
+    </testcase>
 </testsuite>

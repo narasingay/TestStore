@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-08-11T04:02:02.460Z",
+        "start_timestamp": "2023-08-13T16:11:23.199Z",
         "line": 30,
         "name": "Validate the product details after checkout on payments page",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8972000000,
+              "duration": 7938454100,
               "status": "passed"
             },
             "line": 20,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 726000000,
+              "duration": 783044700,
               "status": "passed"
             },
             "line": 21,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 269000000,
+              "duration": 283016200,
               "status": "passed"
             },
             "line": 22,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 991000000,
+              "duration": 1007057600,
               "status": "passed"
             },
             "line": 23,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 9533000000,
+              "duration": 9519544500,
               "status": "passed"
             },
             "line": 24,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 2054000000,
+              "duration": 2054117500,
               "status": "passed"
             },
             "line": 25,
@@ -91,7 +91,7 @@
           },
           {
             "result": {
-              "duration": 4351000000,
+              "duration": 4348248700,
               "status": "passed"
             },
             "line": 26,

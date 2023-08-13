@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +15,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -63,7 +67,7 @@ public class LoginPageStepDefinition {
 	 * Enter user personal details name, surname, email and other details as
 	 * required to signup
 	 */
-	@And("User enters personal and other details as requiired in register page to signup")
+	@And("User enters personal and other details as required in register page to signup")
 	public void User_enters_personal_and_other_details_as_requiired_in_register_page_to_signup(DataTable userDetails)
 			throws Exception {
 		List<Map<String, String>> data = userDetails.asMaps(String.class, String.class);

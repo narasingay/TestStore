@@ -6,9 +6,9 @@ Feature: Verify the name and product details in automation test store applicatio
     Given Launch the browser and navigate to automation test store application
     And Click on login or register button
     When Click on Continue button
-    And User enters personal and other details as requiired in register page to signup
+    And User enters personal and other details as required in register page to signup
       | Name    | Surname | Email                    | Addressone | Country   | State     | City      | Zipcode | Loginname      |
-      | Narsing | Rao     | automation3333@gmail.com | Singapore  | Singapore | Singapore | Singapore |  541203 | automation3333 |
+      | Narsing | Rao     | automation4444@gmail.com | Singapore  | Singapore | Singapore | Singapore |  541203 | automation4444 |
     When Click on Continue button
     Then Validate the name and surname on landing screen
       | Name    | Surname |

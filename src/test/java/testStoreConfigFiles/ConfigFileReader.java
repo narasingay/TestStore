@@ -77,5 +77,11 @@ public class ConfigFileReader {
 		String userConfirmPassword = properties.getProperty("confirmPassword");
 		return userConfirmPassword;
 	}
+	
+	public String getReportConfigPath() {
+	
+		String extentReportConfigPath = properties.getProperty("reportConfigPath");
+		return extentReportConfigPath;
+	}
 
 }
